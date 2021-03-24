@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.body {
+    padding: 10vh 10vw;
+}
+
+.content {
+    width: 100%;
+}
+
+.controls {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.controls-element {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.controls-element:last-child {
+    margin-right: 0;
+}
+
+.controls-element label {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.input {
+    width: 200px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.color-input {
+    height: 100%;
+}
+
+.table {
+    width: 500px;
+    min-height: 500px;
+    background-color: rgb(211, 217, 221);
+}
+
+.add-button {
+    width: 200px;
+    min-height: 45px;
+    font-size: 20px;
+    background-color: rgb(255, 175, 27);
+    border-radius: 15px;
+    border: none;
+    padding: 10px 0px;
+    align-self: flex-end;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.add-button:hover {
+    background-color: rgb(250, 199, 104);
+}
+
+.add-button:focus {
+    outline: none;
+}
+
+.add-button:active {
+    box-shadow: none;
+}
+
+.table-head {
+    display: flex;
+}
+
+.cell {
+    flex: 1;
+    text-align: center;
+    border: 1px solid rgb(51, 51, 51);
+}
