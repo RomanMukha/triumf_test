@@ -112,6 +112,13 @@
     width: 40px;
     height: 40px;
     margin-left: 10px;
+    background-color:  rgb(211, 217, 221);
+    border: none;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+.cell-btn:hover {
+    box-shadow: none;
 }
 
 .control-cell {
