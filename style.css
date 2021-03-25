@@ -4,11 +4,15 @@
 }
 
 .body {
-    padding: 10vh 10vw;
+    display: flex;
+    justify-content: center;
+    padding: 5vh 5vw;
 }
 
 .content {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .controls {
@@ -28,7 +32,7 @@
 
 .controls-element label {
     margin-bottom: 15px;
-    font-size: 20px;
+    white-space: nowrap;
 }
 
 .input {
@@ -42,12 +46,7 @@
 
 .color-input {
     height: 100%;
-}
-
-.table {
-    width: 500px;
-    min-height: 500px;
-    background-color: rgb(211, 217, 221);
+    width: auto;
 }
 
 .add-button {
@@ -74,12 +73,49 @@
     box-shadow: none;
 }
 
+.table {
+    width: 100%;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    border-radius: 15px;
+}
+
 .table-head {
-    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(211, 217, 221);
+}
+
+.table-head .cell:first-child {
+    width: 40px;
+    border-radius: 15px 0 0 15px;
+}
+
+.table-head .cell:last-child {
+    width: 200px;
+    border-radius: 0 15px 15px 0;
 }
 
 .cell {
-    flex: 1;
+    padding: 10px;
     text-align: center;
-    border: 1px solid rgb(51, 51, 51);
+}
+
+.color-circle {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.cell-btn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.control-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
