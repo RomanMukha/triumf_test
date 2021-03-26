@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    padding: 5vh 5vw;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.controls-element {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.controls-element:last-child {
+    margin-right: 0;
+}
+
+.controls-element label {
+    margin-bottom: 15px;
+    white-space: nowrap;
+}
+
+.input {
+    width: 200px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+
+.color-input {
+    height: 100%;
+    width: auto;
+}
+
+.add-button {
+    width: 200px;
+    min-height: 45px;
+    font-size: 20px;
+    background-color: rgb(255, 175, 27);
+    border-radius: 15px;
+    border: none;
+    padding: 10px 0;
+    align-self: flex-end;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+
+.add-button:hover {
+    background-color: rgb(250, 199, 104);
+}
+
+.add-button:focus {
+    outline: none;
+}
+
+.add-button:active {
+    box-shadow: none;
+}
+
+.table {
+    width: 100%;
+    box-shadow: rgb(0 0 0 / 24%) 0 3px 8px;
+    border-radius: 15px;
+}
+
+.table-head {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(211, 217, 221);
+}
+
+.table-head .cell:first-child {
+    width: 40px;
+    border-radius: 15px 0 0 15px;
+}
+
+.table-head .cell:last-child {
+    width: 200px;
+    border-radius: 0 15px 15px 0;
+}
+
+.cell {
+    padding: 10px;
+    text-align: center;
+    max-width: 240px;
+    overflow-wrap: break-word;
+}
+
+.color-circle {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.cell-btn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    background-color: rgb(211, 217, 221);
+    border: none;
+    box-shadow: rgb(0 0 0 / 24%) 0 3px 8px;
+}
+
+.cell-btn:hover {
+    box-shadow: none;
+}
+
+.control-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 850px) {
+    .controls {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .controls-element {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .color-input {
+        height: 50px;
+    }
+
+    .cell-btn {
+        width: 25px;
+        height: 25px;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .add-button {
+        align-self: center;
+    }
+
+    .cell {
+        padding: 5px;
+        max-width: 120px;
+    }
+}
