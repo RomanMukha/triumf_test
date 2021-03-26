@@ -32,7 +32,7 @@
 
 .controls-element label {
     margin-bottom: 15px;
-    font-size: 20px;
+    white-space: nowrap;
 }
 
 .input {
@@ -46,6 +46,7 @@
 
 .color-input {
     height: 100%;
+    width: auto;
 }
 
 .add-button {
@@ -74,12 +75,24 @@
 
 .table {
     width: 100%;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    border-radius: 15px;
 }
 
 .table-head {
     font-size: 20px;
     font-weight: bold;
     background-color: rgb(211, 217, 221);
+}
+
+.table-head .cell:first-child {
+    width: 40px;
+    border-radius: 15px 0 0 15px;
+}
+
+.table-head .cell:last-child {
+    width: 200px;
+    border-radius: 0 15px 15px 0;
 }
 
 .cell {
@@ -91,16 +104,25 @@
     width: 40px;
     height: 40px;
     margin: 0 auto;
-    background-color: green;
     border-radius: 50%;
 }
 
 .cell-btn {
+    display: block;
     width: 40px;
     height: 40px;
     margin-left: 10px;
+    background-color:  rgb(211, 217, 221);
+    border: none;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+.cell-btn:hover {
+    box-shadow: none;
 }
 
 .control-cell {
-    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
